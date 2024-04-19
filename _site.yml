@@ -1,0 +1,36 @@
+name: "Modelos multivariados"
+output_dir: "docs"
+navbar:
+  title: "Modelos Estadísticos para la toma de decisiones"
+  left:
+    - text: "Conceptos Generales"
+      menu:
+        - text: "Conceptos básicos"
+          href: recurso010.html 
+        - text: "Tablas de contingencia"
+          href: recurso020.html  
+        - text: "Matriz de Varianza-Covarianza"
+          href: recurso030.html            
+          
+          
+    - text: "A.Componentes Principales"
+      menu:
+        - text: "Conceptos ACP"
+          href: recurso100.html
+        - text: "Ejemplo"
+          href: recurso110.html
+    - text: "A. de Conglomerados"
+      menu:
+        - text: "ConceptOs A.de Conglomerados"
+          href: recurso200.html
+        - text: "Ejemplo"
+          href: recurso210.html          
+    - text: "A. de Correspondencia"
+      menu:
+        - text: "Conceptos A.de Correspondencia"
+          href: recurso300.html
+        - text: "Ejemplo"
+          href: recurso310.html          
+output:
+  html_document:
+    css: style.css

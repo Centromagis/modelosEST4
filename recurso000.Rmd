@@ -1,0 +1,23 @@
+---
+title: "**En construcción**"
+author: "Modelos Estadísticos para la toma de decisiones"
+date: " "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+```
+
+
+
+```{r}
+# Instalar el paquete si aún no lo tienes instalado
+# install.packages("factoextra")
+
+# Cargar librerías
+
+# No es necesario realizar transformaciones significativas para este ejemplo
+
+```
+
