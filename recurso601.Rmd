@@ -30,12 +30,12 @@ Objetivo : Reducción de dimensión de la base de datos (reducir variables). Pas
 
 
 Este proceso genera nuevas variables como una combinación lineal de las variables originales.
-Para la construcción de estos componentes se parte de la matriz de varianzas-covarianzas, que en su diagonal concentra las varianza de todas las variables incluidas en el analisis. La suma de estas varianzas conforman la variacion total de la data.  
+Para la construcción de estos componentes se parte de la matriz de varianzas-covarianzas, que en su diagonal concentra las varianza de todas las variables incluidas en el análisis. La suma de estas varianzas conforman la variación total de la data.  
 
-El primer componente captura la mayor parte de esta variación total, el segundo una menor parte y así sucesivamente hasta el último componente. Por lo general los dos primeros componentes captran un gran porcentaje de la variación total (80% o mas).
+El primer componente captura la mayor parte de esta variación total, el segundo una menor parte y así sucesivamente hasta el último componente. Por lo general los dos primeros componentes captan un gran porcentaje de la variación total (80% o mas).
 
 
-De esta forma se pueden graficar los observaciones (filas) en un plano carteciano (2D). Si se puede dar nombre a los ejes (CP1 y CP2) teniendo en cuenta los mayores pesos de las variables, el análisis permitirá explicar y analizar esta transformación. 
+De esta forma se pueden graficar los observaciones (filas) en un plano cartesiano (2D). Si se puede dar nombre a los ejes (CP1 y CP2) teniendo en cuenta los mayores pesos de las variables, el análisis permitirá explicar y analizar esta transformación. 
 
 
 ```{r}
@@ -53,7 +53,7 @@ str(rotacion1)
 
 ```{r}
 # install.packages("VIM")
-VIM::aggr(rotacion1, cex.axis = 0.5, cex.lab= 0.8)  # graficos de datos faltantes
+VIM::aggr(rotacion1, cex.axis = 0.5, cex.lab= 0.8)  # gráficos de datos faltantes
 
 
 ```

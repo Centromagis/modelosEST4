@@ -71,7 +71,7 @@ Estos valores nos permiten evaluar la relevancia de cada uno de los componentes 
 <br/>
 
 ### **Carga de las variables**  
-Indica la contribución de cada variable a cada componente principal. Dependiendo su valor puede sugerir un nombre para el componente que facilite la interpretación de los resultados obtenidos. Es decir que se trata de los diferentes pesos que tiene cada variables original como una convinación lineal. 
+Indica la contribución de cada variable a cada componente principal. Dependiendo su valor puede sugerir un nombre para el componente que facilite la interpretación de los resultados obtenidos. Es decir que se trata de los diferentes pesos que tiene cada variables original como una combinación lineal. 
 
 <br/>
 
@@ -135,7 +135,7 @@ $$
 
 </br></br>
 
-Enconces la varianza del primer componente será :
+Entonces la varianza del primer componente será :
 
 $$V[CP_1] = V[b'_1 X] = b'_1 \hspace{.1cm}\Sigma \hspace{.1cm} b_1$$
 </br>

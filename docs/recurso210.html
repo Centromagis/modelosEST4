@@ -14,7 +14,7 @@
 
 <title>Ejemplo</title>
 
-<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -460,7 +460,7 @@ por distancias</strong></h3>
 # distancia euclidiana
 dist_emp &lt;- dist(empresa_z, method = &#39;euclidean&#39;)
 
-# Cluster jerarquico con el método complete
+# Clúster jerárquico con el método complete
 hc_emp &lt;- hclust(dist_emp, method = &#39;complete&#39;)
 
 # Determinamos a dónde pertenece cada observación
@@ -486,8 +486,8 @@ rect.hclust(hc_emp, k = 2, border = 2:5)</code></pre>
 parecen (menor distancia euclidiana) son los individuos <code>E7</code>,
 <code>E8</code>, <code>E3</code>y <code>E4</code>
 (<code>d(E7, E8) = 0.3863837</code>) <code>d(E3, E4) = 0.4350355</code>)
-, conformando estas cuatro empresas un primer cluster y el resto un
-segundo grupo o cluster a una distancia de <code>2.5</code>.</p>
+, conformando estas cuatro empresas un primer clúster y el resto un
+segundo grupo o clúster a una distancia de <code>2.5</code>.</p>
 <p>En el caso de tener hipótesis de la existencia de de 4 grupos podemos
 reducir la distancia <code>1.0</code> y se obtienen cuarto
 conglomerados</p>
@@ -535,7 +535,7 @@ library(cluster)
 # distancia euclidiana
 dist_emp &lt;- dist(empresa_z, method = &#39;euclidean&#39;)
 
-# Cluster jerarquico con el método complete
+# Clúster jerárquico con el método complete
 hc_emp &lt;- hclust(dist_emp, method = &#39;complete&#39;)
 
 # Determinamos a dónde pertenece cada observación

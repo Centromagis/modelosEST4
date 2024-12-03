@@ -14,7 +14,7 @@
 
 <title>Ejemplo - Análisis de Conglomerados</title>
 
-<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -390,10 +390,10 @@ empresa =data.frame(inv.pub = c(16,12,10,12,45,50,45,50),
 rownames(empresa) = c(&quot;E1&quot;,&quot;E2&quot;,&quot;E3&quot;,&quot;E4&quot;,&quot;E5&quot;,&quot;E6&quot;,&quot;E7&quot;, &quot;E8&quot;)</code></pre>
 <p></br></p>
 <p>Dado que los rangos de las variables son diferente y con fin de que
-estas diferencias en las dimensines de las variables no afecte los
-calculos de las distancias se aconseja estandarizar las variables
-(restar la media y dividir el resultado por la desviación estandar)
-antes de generar las calculos de las distancias</p>
+estas diferencias en las dimensiones de las variables no afecte los
+cálculos de las distancias se aconseja estandarizar las variables
+(restar la media y dividir el resultado por la desviación estándar)
+antes de generar las cálculos de las distancias</p>
 <p></br></p>
 <p><span class="math display">\[
 z = \dfrac{\bar{x} - \mu}{\sigma}
@@ -427,8 +427,8 @@ E6 1.8870832 2.0131883 2.3993252 2.5389816 0.6218234
 E7 2.6098255 2.3345313 1.9016521 1.7482951 2.1096739 1.5696079          
 E8 2.9935422 2.7195432 2.2327792 2.0327447 2.4055927 1.8283841 0.3863837</code></pre>
 <p></br></br></p>
-<div id="distamcias-de-manhattan" class="section level4">
-<h4><span style="color:#034a94"><strong>Distamcias de
+<div id="distancias-de-manhattan" class="section level4">
+<h4><span style="color:#034a94"><strong>Distancias de
 Manhattan</strong></span></h4>
 <pre class="r"><code>dist(empresa_z, method = &quot;manhattan&quot;)</code></pre>
 <pre><code>          E1        E2        E3        E4        E5        E6        E7
@@ -613,8 +613,8 @@ tail(whisky)</code></pre>
 5    34    100   100    11     3
 6    35     95   100    12     0</code></pre>
 <p></br></br></p>
-<p>Mediante la libreria <em>factoextra</em> podemos calcular las
-distancias euclidianas de los individuos y gráficar el dendograma del
+<p>Mediante la librería <em>factoextra</em> podemos calcular las
+distancias euclidianas de los individuos y graficar el dendograma del
 conjunto de datos:</p>
 <p></br></p>
 <pre class="r"><code>library(factoextra)
@@ -637,7 +637,7 @@ dendograma, quedando:</p>
           main = &quot;Dendograma&quot;)</code></pre>
 <p></br></br></p>
 <p></br></p>
-<p>En este caso el número optimo de grupos o clusters será de 2. Con el
+<p>En este caso el número óptimo de grupos o clusters será de 2. Con el
 siguiente código podemos ver en la primera fila los individuos y en la
 segunda los clusters a los que estos pertenecen.</p>
 <p></br></br></p>
@@ -645,7 +645,7 @@ segunda los clusters a los que estos pertenecen.</p>
 grp</code></pre>
 <pre><code> [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2</code></pre>
 <p></br></br></p>
-<p>La libreria <code>FactoClass</code> para representar los clusters en
+<p>La librería <code>FactoClass</code> para representar los clusters en
 el primer plano factorial, en la función <code>FactoClass</code> tenemos
 los siguientes argumentos:</p>
 <p></br></br></p>
@@ -667,7 +667,7 @@ plotFactoClass(Cluster,title=&quot;Análisis de conglomerados&quot;)</code></pre
 <p></br></br></p>
 <p><img src="img/cluster1.png" width="80%" style="display: block; margin: auto;" /></p>
 <p></br></br></p>
-<!-- A partir de ahora podemos realizar el análisis que hicimos anteriormente en un ACP, podemos observar que en el primer plano factorial se representa el $75.99$\% de la varianza total, quedando un $24.01$\% sin explicar mediante las dos primeras componentes. Se evidencia que el cluster 2 se caracteriza por tener porcentaje altos de alcohol, altos precios y mayores años de añejo, por otra parte el cluster 1 se caracteriza por tener precios mucho más economicos a costa de tener menor porcentaje de alcohol y pocos años de añejo. -->
+<!-- A partir de ahora podemos realizar el análisis que hicimos anteriormente en un ACP, podemos observar que en el primer plano factorial se representa el $75.99$\% de la varianza total, quedando un $24.01$\% sin explicar mediante las dos primeras componentes. Se evidencia que el clúster 2 se caracteriza por tener porcentaje altos de alcohol, altos precios y mayores años de añejo, por otra parte el clúster 1 se caracteriza por tener precios mucho más económicos a costa de tener menor porcentaje de alcohol y pocos años de añejo. -->
 </div>
 </div>
 

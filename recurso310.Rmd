@@ -100,7 +100,7 @@ El resultado indica que se rechaza la hipótesis de independencia de las variabl
 
 <br/>
 
-Finalmente se procede a realizar el análisis de correspondencia que consistes en estimar las coordenadas para cada uno de los niveles de ambas variables y representarlas en un plano cartesiano
+Finalmente se procede a realizar el análisis de correspondencia que consiste en estimar las coordenadas para cada uno de los niveles de ambas variables y representarlas en un plano cartesiano
 
 <br/>
 

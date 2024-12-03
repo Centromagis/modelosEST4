@@ -17,7 +17,7 @@ c3="#034A94"
 c4="#686868"
 
 # devtools::install_github("kassambara/factoextra") # ultima versión
-library("factoextra") # visualizacion elegante en ggplot2
+library("factoextra") # visualización elegante en ggplot2
 par(mar = c(1,1,1,1) + 0.1)
 
 library(tidyverse)
@@ -101,7 +101,7 @@ library(tidyverse)
 # distancia euclidiana
 dist_emp <- dist(empresa_z, method = 'euclidean')
 
-# Cluster jerarquico con el método complete
+# Clúster jerárquico con el método complete
 hc_emp <- hclust(dist_emp, method = 'complete')
 
 # Determinamos a dónde pertenece cada observación
@@ -128,7 +128,7 @@ rect.hclust(hc_emp, k = 2, border = 2:5)
 
 </br>
 
-En este diagrama se observa que al inicio los individuos que más se parecen (menor distancia euclidiana) son los individuos `E7`, `E8`, `E3`y `E4` (`d(E7, E8) = 0.3863837`) `d(E3, E4) = 0.4350355`) , conformando estas cuatro empresas un primer cluster y el resto un segundo grupo o cluster a una distancia de `2.5`.
+En este diagrama se observa que al inicio los individuos que más se parecen (menor distancia euclidiana) son los individuos `E7`, `E8`, `E3`y `E4` (`d(E7, E8) = 0.3863837`) `d(E3, E4) = 0.4350355`) , conformando estas cuatro empresas un primer clúster y el resto un segundo grupo o clúster a una distancia de `2.5`.
 
 En el caso de tener hipótesis de la existencia de de 4 grupos podemos reducir la distancia `1.0` y se obtienen cuarto conglomerados
 
@@ -182,7 +182,7 @@ library(cluster)
 # distancia euclidiana
 dist_emp <- dist(empresa_z, method = 'euclidean')
 
-# Cluster jerarquico con el método complete
+# Clúster jerárquico con el método complete
 hc_emp <- hclust(dist_emp, method = 'complete')
 
 # Determinamos a dónde pertenece cada observación

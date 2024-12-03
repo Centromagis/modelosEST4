@@ -14,7 +14,7 @@
 
 <title>Análisis de Correspondencia</title>
 
-<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -565,7 +565,7 @@ class="math inline">\(\lambda\)</span> de Pearson para identificar si
 existe asociación entre las variables <span
 class="math inline">\(A\)</span> y <span
 class="math inline">\(B\)</span>. Para ello se parte de una tabla
-cruzada o de doble entrada donde se visializan las frecuencias conjuntas
+cruzada o de doble entrada donde se visualizan las frecuencias conjuntas
 para todas las combinaciones posibles entre las categorías de ambas
 variables.</p>
 <p></br></br></p>
@@ -585,8 +585,8 @@ m</code></pre>
 <p></br></br></p>
 <p>Mediante la prueba chi.cuadrado se obtienen dos matrices con las que
 posteriormente se construirán las coordenadas que serán representadas en
-un plano cartesiano para permitir ver la cercania o no entre las
-categorias de ambas variables</p>
+un plano cartesiano para permitir ver la cercanía o no entre las
+categorías de ambas variables</p>
 <pre>
     Pearson's Chi-squared test
 
@@ -674,7 +674,7 @@ Factorización de la matriz U
 U &lt;- eigen(C%*%t(C))$vectors
 U</code></pre>
 <pre>
-Matriz V obtenida en la factorizacion de la matriz de discremancias 
+Matriz V obtenida en la factorización de la matriz de discrepancias 
 
            [,1]        [,2]         [,3]        [,4]
 [1,] 0.96744006  0.10215951  0.229362467 -0.03187520
@@ -778,7 +778,7 @@ categorías de las dos variables</p>
 <p><strong>Porcentaje de varianza explicado</strong></p>
 <p></br></p>
 <p>Con el fin de establecer el porcentaje explicado por los dos primeros
-ejes, llamados componentes o tambien dimensiones a tener en cuenta
+ejes, llamados componentes o también dimensiones a tener en cuenta
 dentro del análisis se calculan los valores propios de la matriz
 obtenida en el análisis de correspondencia</p>
 <pre class="r"><code>library(ade4)
@@ -799,7 +799,7 @@ a4  4  11  1  124</code></pre>
 <pre class="r"><code>res.ac &lt;- CA(m)</code></pre>
 <p><img src="recurso300_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 <pre class="r"><code>valores_prop &lt;-res.ac$eig </code></pre>
-<p>El mapa permite visualizar la cercania o no entre las categorías de
+<p>El mapa permite visualizar la cercanía o no entre las categorías de
 las variables. Se observa varios grupos:</p>
 <ul>
 <li>a1, b4</li>

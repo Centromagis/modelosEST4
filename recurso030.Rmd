@@ -109,7 +109,7 @@ Este indicador estadístico cuantifica la fuerza y la dirección de la **relaci�
 
 <br/>
 
-* $1$ indica una correlación perfecta positiva - cuando una variable aumenta, la otra tambien aumenta.
+* $1$ indica una correlación perfecta positiva - cuando una variable aumenta, la otra también aumenta.
 
 * $-1$ indica una correlación perfecta negativa  cuando una variable aumenta, la otra disminuye.
 
